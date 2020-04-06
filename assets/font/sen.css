@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Sen';
+    src: url('hinted-Sen-Regular.woff2') format('woff2'),
+        url('hinted-Sen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sen';
+    src: url('hinted-Sen-ExtraBold.woff2') format('woff2'),
+        url('hinted-Sen-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sen';
+    src: url('hinted-Sen-Bold.woff2') format('woff2'),
+        url('hinted-Sen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
