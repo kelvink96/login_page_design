@@ -2,8 +2,10 @@
 @import "buttons"
 
 body
-  h1, h2, h3, h4, h5, h6, p, span, button, a, label
-    font-family: "Sen", sans-serif !important
+  overflow: hidden
+
+  h1, h2, h3, h4, h5, h6, p, span, button, a, label, ::placeholder
+    font-family: "Sen" !important
 
 .main-wrapper
   height: 100vh
@@ -26,3 +28,66 @@ body
 
       button
         font-size: 1em
+
+  .form-wrapper
+    padding: 4em 3em
+
+    .form-title
+      text-transform: capitalize
+      color: $darker
+
+    .form-title-wrapper
+      button
+        width: 100%
+        font-size: 1em
+
+    .uk-divider-icon
+      padding: 1em 0
+
+    form
+      .form-row
+        label, input
+          font-size: 1em
+          color: $darker
+
+        input
+          &:focus
+            border-color: $light-orange
+
+      .forgot-password-wrapper
+        a
+          text-transform: capitalize
+          color: $med-orange
+
+      .login-btn-wrapper
+        button
+          width: 100%
+          font-size: 1.1em
+          text-transform: uppercase
+
+    .new-user-link-wrapper
+      p
+        color: $darker
+        font-size: 1em
+
+        a
+          margin-left: .2em
+          color: $light-orange
+
+          &:hover,
+          &:focus
+            transition: all ease .1s
+
+    .footer-info
+      margin-top: 5em
+
+      .uk-width-1-4
+        a
+          font-size: 1em
+          color: $dark-orange
+          text-transform: capitalize
+
+          &:hover,
+          &:focus
+            color: $light-orange
+            transition: all ease .1s

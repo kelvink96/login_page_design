@@ -6,9 +6,9 @@
 /* Color Theme Swatches in HSLA */
 .btn-slide {
   box-shadow: inset 0 0 0 0 white;
-  -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 
 .slide_down:hover {
@@ -30,7 +30,7 @@
 .btn-white-f {
   background-color: transparent;
   color: white;
-  border: 1.5px solid white;
+  border: 2px solid white;
 }
 .btn-white-f:hover, .btn-white-f:focus {
   box-shadow: inset 0 100px 0 0 white;
@@ -45,10 +45,25 @@
 .btn-orange-f:hover, .btn-orange-f:focus {
   box-shadow: inset 0 100px 0 0 #f04405;
   border-color: #f04405;
+  color: white;
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body button, body a, body label {
-  font-family: "Sen", sans-serif !important;
+.btn-dark-orange-f {
+  background-color: #a52103;
+  color: white;
+  border: 1.5px solid #a52103;
+}
+.btn-dark-orange-f:hover, .btn-dark-orange-f:focus {
+  box-shadow: inset 0 100px 0 0 white;
+  border-color: #a52103;
+  color: #a52103;
+}
+
+body {
+  overflow: hidden;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body button, body a, body label, body ::placeholder {
+  font-family: "Sen" !important;
 }
 
 .main-wrapper {
@@ -72,6 +87,59 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body bu
 }
 .main-wrapper .bg-img-wrapper .image-text-wrapper button {
   font-size: 1em;
+}
+.main-wrapper .form-wrapper {
+  padding: 4em 3em;
+}
+.main-wrapper .form-wrapper .form-title {
+  text-transform: capitalize;
+  color: #0d0d0d;
+}
+.main-wrapper .form-wrapper .form-title-wrapper button {
+  width: 100%;
+  font-size: 1em;
+}
+.main-wrapper .form-wrapper .uk-divider-icon {
+  padding: 1em 0;
+}
+.main-wrapper .form-wrapper form .form-row label, .main-wrapper .form-wrapper form .form-row input {
+  font-size: 1em;
+  color: #0d0d0d;
+}
+.main-wrapper .form-wrapper form .form-row input:focus {
+  border-color: #ed7307;
+}
+.main-wrapper .form-wrapper form .forgot-password-wrapper a {
+  text-transform: capitalize;
+  color: #f04405;
+}
+.main-wrapper .form-wrapper form .login-btn-wrapper button {
+  width: 100%;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.main-wrapper .form-wrapper .new-user-link-wrapper p {
+  color: #0d0d0d;
+  font-size: 1em;
+}
+.main-wrapper .form-wrapper .new-user-link-wrapper p a {
+  margin-left: 0.2em;
+  color: #ed7307;
+}
+.main-wrapper .form-wrapper .new-user-link-wrapper p a:hover, .main-wrapper .form-wrapper .new-user-link-wrapper p a:focus {
+  transition: all ease 0.1s;
+}
+.main-wrapper .form-wrapper .footer-info {
+  margin-top: 5em;
+}
+.main-wrapper .form-wrapper .footer-info .uk-width-1-4 a {
+  font-size: 1em;
+  color: #a52103;
+  text-transform: capitalize;
+}
+.main-wrapper .form-wrapper .footer-info .uk-width-1-4 a:hover, .main-wrapper .form-wrapper .footer-info .uk-width-1-4 a:focus {
+  color: #ed7307;
+  transition: all ease 0.1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
