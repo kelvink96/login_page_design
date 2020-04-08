@@ -18,38 +18,39 @@ html(lang="en")
                         button.uk-button.uk-button-default.uk-button-large.btn-slide.btn-white-f about kyosk
                         button.uk-button.uk-button-default.uk-button-large.uk-margin-left.btn-slide.btn-white-f sell on kyosk
                 .uk-width-2-5.form-wrapper
-                    p login
-                    .uk-grid
+                    h3.form-title.uk-text-bold.uk-heading-small.uk-text-center login
+                    .uk-grid.form-title-wrapper.uk-text-center
                         .uk-width-1-2
-                            button.uk-button.uk-button-default
-                                i.fab.fa-facebook
-                                span log in with facebook
+                            button.uk-button.uk-button-default.btn-slide.btn-orange-f
+                                i.fab.fa-facebook.uk-margin-small-right
+                                span facebook
                         .uk-width-1-2
-                            button.uk-button.uk-button-default
-                                i.fab.fa-facebook
-                                span log in with google
+                            button.uk-button.uk-button-default.btn-slide.btn-orange-f
+                                i.fab.fa-google.uk-margin-small-right
+                                span google
                     hr.uk-divider-icon
                     form
-                        .uk-margin
-                            label.uk-form-label(for="email-mobile") Mobile Phone or Email Address
+                        .uk-margin.form-row
+                            label.uk-form-label.uk-text-bold(for="email-mobile") Mobile Phone or Email Address
                             input.uk-input#email-mobile(type="text" placeholder="email/mobile")
-                        .uk-margin
-                            label.uk-form-label() Password
-                            input.uk-input(type="password")
+                        .uk-margin.form-row
+                            label.uk-form-label.uk-text-bold(for="password") Password
+                            input.uk-input#password(type="password")
                         .forgot-password-wrapper
-                            a.uk-link-text forgot password?
-                        .uk-margin
-                            button.uk-button.uk-button-primary login
-                    .uk-margin.new-user-wrapper
-                        p new user? sign up
+                            a.uk-link-text
+                                u forgot password?
+                        .uk-margin.login-btn-wrapper
+                            button.uk-button.btn-slide.btn-dark-orange-f login
+                    .uk-margin.new-user-link-wrapper.uk-text-center
+                        p Not yet a member? Sign up
                             a.uk-link-text here
-                    .uk-grid.uk-grid-small
+                    .uk-grid.uk-grid-small.footer-info.uk-text-center.uk-flex-bottom
                         .uk-width-1-4
-                            a.uk-link-text contact
+                            a.uk-link-text.uk-text-middle contact
                         .uk-width-1-4
-                            a.uk-link-text faq
+                            a.uk-link-text.uk-text-middle FAQ
                         .uk-width-1-4
-                            a.uk-link-text privacy policy
+                            a.uk-link-text.uk-text-middle privacy policy
                         .uk-width-1-4
-                            a.uk-link-text terms & conditions
+                            a.uk-link-text.uk-text-middle terms & conditions
         script(src="assets/js/uikit.min.js")
