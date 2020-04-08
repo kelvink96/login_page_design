@@ -1,7 +1,9 @@
 @import "variables"
+@import "buttons"
 
 body
-  font-family: "Sen", sans-serif !important
+  h1, h2, h3, h4, h5, h6, p, span, button, a, label
+    font-family: "Sen", sans-serif !important
 
 .main-wrapper
   height: 100vh
@@ -10,3 +12,17 @@ body
     background-image: linear-gradient(60deg, rgba(242, 68, 4, .5), rgba(242, 116, 7, .7)), url("../images/bg.jpg")
     height: 100vh
     background-size: cover
+
+    .image-text-wrapper
+      position: absolute
+      margin: 2em
+      bottom: 3em
+
+      h2, p
+        color: white
+
+      h2
+        text-transform: capitalize
+
+      button
+        font-size: 1em

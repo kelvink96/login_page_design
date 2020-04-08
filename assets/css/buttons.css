@@ -1,0 +1,31 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+.btn-slide {
+  color: #FFF;
+  border: 1px solid #d80286;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.btn-white-f {
+  background-color: white;
+  color: #0d0d0d;
+}
+.btn-white-f:hover, .btn-white-f:focus {
+  box-shadow: inset 0 100px 0 0 #D80286;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=buttons.css.map */
