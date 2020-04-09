@@ -70,7 +70,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body bu
   height: 100vh;
 }
 .main-wrapper .bg-img-wrapper {
-  background-image: linear-gradient(60deg, rgba(242, 68, 4, 0.5), rgba(242, 116, 7, 0.7)), url("../images/bg.jpg");
+  background-image: linear-gradient(60deg, rgba(242, 68, 4, 0.6), rgba(242, 116, 7, 0.8)), url("../images/bg.jpg");
   height: 100vh;
   background-size: cover;
 }
@@ -89,11 +89,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body bu
   font-size: 1em;
 }
 .main-wrapper .form-wrapper {
-  padding: 4em 3em;
+  padding: 1em 3em 3em 3em;
 }
 .main-wrapper .form-wrapper .form-title {
   text-transform: capitalize;
   color: #0d0d0d;
+  margin: 1em;
 }
 .main-wrapper .form-wrapper .form-title-wrapper button {
   width: 100%;
@@ -130,16 +131,191 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body bu
   transition: all ease 0.1s;
 }
 .main-wrapper .form-wrapper .footer-info {
-  margin-top: 5em;
+  margin-top: 3em;
 }
-.main-wrapper .form-wrapper .footer-info .uk-width-1-4 a {
+.main-wrapper .form-wrapper .footer-info div a {
   font-size: 1em;
   color: #a52103;
   text-transform: capitalize;
 }
-.main-wrapper .form-wrapper .footer-info .uk-width-1-4 a:hover, .main-wrapper .form-wrapper .footer-info .uk-width-1-4 a:focus {
+.main-wrapper .form-wrapper .footer-info div a:hover, .main-wrapper .form-wrapper .footer-info div a:focus {
   color: #ed7307;
   transition: all ease 0.1s;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 360px) {
+  body {
+    overflow: auto;
+  }
+  body .main-wrapper {
+    height: 100%;
+  }
+  body .main-wrapper .bg-img-wrapper {
+    height: 95vh;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper {
+    left: 40% !important;
+    transform: translateX(-50%) !important;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper h2 {
+    font-size: 2em;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper p {
+    font-size: 1em;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper button {
+    padding: 0 20px;
+  }
+  body .main-wrapper .form-wrapper .footer-info div {
+    padding: 0.5em 0 0.5em 1em;
+  }
+}
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
+  body .main-wrapper {
+    height: 100%;
+  }
+  body .main-wrapper .bg-img-wrapper {
+    height: 95vh;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper {
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper button {
+    margin-top: 0.5em;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper button:last-child {
+    margin-left: 0 !important;
+    margin-top: 0.5em;
+  }
+  body .main-wrapper .form-wrapper {
+    padding: 1em 2em 2em 2em;
+    position: relative !important;
+    right: auto;
+    top: auto;
+    transform: translateY(0);
+  }
+  body .main-wrapper .form-wrapper .form-title {
+    margin: 0.5em;
+  }
+  body .main-wrapper .form-wrapper .form-title-wrapper div {
+    margin: 0.5em 0;
+  }
+  body .main-wrapper .form-wrapper .uk-divider-icon {
+    padding: 0.5em;
+  }
+  body .main-wrapper .form-wrapper .footer-info div {
+    padding: 0.5em 0 0.5em 1em;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+  body .main-wrapper {
+    height: 100%;
+  }
+  body .main-wrapper .bg-img-wrapper {
+    height: 90vh;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper button {
+    margin-top: 2em;
+  }
+  body .main-wrapper .form-wrapper {
+    padding: 1em 2em 2em 2em;
+    position: relative !important;
+    right: auto;
+    top: auto;
+    transform: translateY(0);
+  }
+  body .main-wrapper .form-wrapper .form-title {
+    margin: 0.5em;
+  }
+  body .main-wrapper .form-wrapper .form-title-wrapper div {
+    margin: 0.5em 0;
+  }
+  body .main-wrapper .form-wrapper .uk-divider-icon {
+    padding: 0.5em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  body .main-wrapper {
+    height: 100vh;
+  }
+  body .main-wrapper .bg-img-wrapper {
+    height: 100vh;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(0);
+    text-align: left;
+  }
+  body .main-wrapper .form-wrapper {
+    padding: 2em;
+    position: absolute !important;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    overflow: hidden;
+  }
+  body .main-wrapper {
+    height: 100vh;
+  }
+  body .main-wrapper .bg-img-wrapper {
+    height: 100vh;
+  }
+  body .main-wrapper .bg-img-wrapper .image-text-wrapper {
+    position: absolute !important;
+    top: 70%;
+    left: 0;
+    transform: translateX(0);
+    text-align: left;
+  }
+  body .main-wrapper .form-wrapper {
+    padding: 2em;
+  }
+  body .main-wrapper .form-wrapper .form-title-wrapper div button {
+    font-size: 1.1em;
+  }
+  body .main-wrapper .form-wrapper form .uk-margin label, body .main-wrapper .form-wrapper form .uk-margin input {
+    font-size: 1.1em;
+  }
+  body .main-wrapper .form-wrapper form .login-btn-wrapper button {
+    font-size: 1.1em;
+  }
+  body .main-wrapper .form-wrapper .new-user-link-wrapper p {
+    font-size: 1.1em;
+  }
+  body .main-wrapper .form-wrapper .footer-info div a {
+    font-size: 1.1em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@ body
   height: 100vh
 
   .bg-img-wrapper
-    background-image: linear-gradient(60deg, rgba(242, 68, 4, .5), rgba(242, 116, 7, .7)), url("../images/bg.jpg")
+    background-image: linear-gradient(60deg, rgba(242, 68, 4, .6), rgba(242, 116, 7, .8)), url("../images/bg.jpg")
     height: 100vh
     background-size: cover
 
@@ -30,11 +30,12 @@ body
         font-size: 1em
 
   .form-wrapper
-    padding: 4em 3em
+    padding: 1em 3em 3em 3em
 
     .form-title
       text-transform: capitalize
       color: $darker
+      margin: 1em
 
     .form-title-wrapper
       button
@@ -79,9 +80,9 @@ body
             transition: all ease .1s
 
     .footer-info
-      margin-top: 5em
+      margin-top: 3em
 
-      .uk-width-1-4
+      div
         a
           font-size: 1em
           color: $dark-orange
@@ -91,3 +92,190 @@ body
           &:focus
             color: $light-orange
             transition: all ease .1s
+
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 360px)
+  body
+    overflow: auto
+
+    .main-wrapper
+      height: 100%
+
+      .bg-img-wrapper
+        height: 95vh
+
+        .image-text-wrapper
+          left: 40% !important
+          transform: translateX(-50%) !important
+
+          h2
+            font-size: 2em
+
+          p
+            font-size: 1em
+
+          button
+            padding: 0 20px
+
+      .form-wrapper
+        .footer-info
+          div
+            padding: .5em 0 .5em 1em
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px)
+  body
+    overflow: auto
+
+    .main-wrapper
+      height: 100%
+
+      .bg-img-wrapper
+        height: 95vh
+
+        .image-text-wrapper
+          position: absolute
+          left: 44%
+          transform: translateX(-50%)
+          text-align: center
+
+          button
+            margin-top: .5em
+
+            &:last-child
+              margin-left: 0 !important
+              margin-top: .5em
+
+      .form-wrapper
+        padding: 1em 2em 2em 2em
+        position: relative !important
+        right: auto
+        top: auto
+        transform: translateY(0)
+
+        .form-title
+          margin: .5em
+
+        .form-title-wrapper
+          div
+            margin: .5em 0
+
+        .uk-divider-icon
+          padding: .5em
+
+        .footer-info
+          div
+            padding: .5em 0 .5em 1em
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px)
+  body
+    overflow: auto
+
+    .main-wrapper
+      height: 100%
+
+      .bg-img-wrapper
+        height: 90vh
+
+        .image-text-wrapper
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translateX(-50%)
+          text-align: center
+
+          button
+            margin-top: 2em
+
+      .form-wrapper
+        padding: 1em 2em 2em 2em
+        position: relative !important
+        right: auto
+        top: auto
+        transform: translateY(0)
+
+        .form-title
+          margin: .5em
+
+        .form-title-wrapper
+          div
+            margin: .5em 0
+
+        .uk-divider-icon
+          padding: .5em
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  body
+    overflow: hidden
+
+    .main-wrapper
+      height: 100vh
+
+      .bg-img-wrapper
+        height: 100vh
+
+        .image-text-wrapper
+          position: absolute
+          top: 50%
+          left: 0
+          transform: translateX(0)
+          text-align: left
+
+      .form-wrapper
+        padding: 2em
+        position: absolute !important
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+
+@media only screen and (min-width: 1600px)
+  body
+    overflow: hidden
+
+    .main-wrapper
+      height: 100vh
+
+      .bg-img-wrapper
+        height: 100vh
+
+        .image-text-wrapper
+          position: absolute !important
+          top: 70%
+          left: 0
+          transform: translateX(0)
+          text-align: left
+
+      .form-wrapper
+        padding: 2em
+
+        .form-title-wrapper
+          div
+            button
+              font-size: 1.1em
+
+        form
+          .uk-margin
+            label, input
+              font-size: 1.1em
+
+          .login-btn-wrapper
+            button
+              font-size: 1.1em
+
+        .new-user-link-wrapper
+          p
+            font-size: 1.1em
+
+        .footer-info
+          div
+            a
+              font-size: 1.1em
