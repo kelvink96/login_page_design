@@ -293,7 +293,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body bu
   }
   body .main-wrapper .bg-img-wrapper .image-text-wrapper {
     position: absolute !important;
-    top: 70%;
+    top: 50%;
     left: 0;
     transform: translateX(0);
     text-align: left;
